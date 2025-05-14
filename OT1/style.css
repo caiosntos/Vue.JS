@@ -1,0 +1,10 @@
+#app{
+    background-color: gray;
+    font-size: xx-large;
+    padding: 500px;
+    text-align: center;
+}
+
+p{
+    color:red;
+}
