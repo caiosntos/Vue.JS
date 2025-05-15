@@ -30,3 +30,28 @@ var app4 = new Vue({
         }
     }
 })
+
+var app5 = new Vue({
+     el:'#app5',
+     data:{
+        items:[
+            {id:1, text: 'Item 1'},
+            {id:2, text: 'Item 2'},
+            {id:3, text: 'Item 3'}
+            ]
+         }
+})
+
+var app6 = new Vue({
+     el:'#app6',
+     data:{
+        titulo:'Aprendendo Vue JS',
+        linguagens:[
+            {nome: 'HTML', status: true},
+            {nome: 'CSS', status: true},
+            {nome: 'JavaScript', status: false},
+            {nome: 'PHP', status: false},
+            {nome: 'Python', status: false},
+        ]
+    }
+})

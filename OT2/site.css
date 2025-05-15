@@ -1,0 +1,48 @@
+    body {
+      background-color: #f8f9fa;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .login {
+      display: flex;
+      width: 100%;
+      max-width: 500px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      overflow: hidden;
+      background-color: #fff;
+    }
+
+    .login-form {
+      flex: 1;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .login-form h2 {
+      margin-bottom: 20px;
+      font-weight: bold;
+      font-size: 24px;
+      text-align: center;
+    }
+
+    .login-form h1 {
+      text-align: center;
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    label {
+      font-weight: 500;
+    }
+
+    .error-message {
+      color: red;
+      margin-top: 15px;
+      text-align: center;
+    }
