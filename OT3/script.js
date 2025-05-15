@@ -1,11 +1,13 @@
 var app = new Vue({
     el:'#app',
     data:{
-        titulo:'Apredendo Vue JS',
+        titulo:'Formulário Básico',
         nome: '',
-        telefone:'',
-        novidades:'',
-        interesses:[],
-        conheceu:''
+        email:'',   
+    },
+    methods: {
+    enviar() {
+      alert('Dados enviados:'+'\nNome:' + this.nome + '\nEmail:' + this.email);
     }
+  }
 })
