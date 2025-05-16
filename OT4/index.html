@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso Vue Js - Diretiva v-bindm atribuindo valor às tags html</title>
+</head>
+<body>
+    <div id="app">
+        <h1>{{titulo}}</h1>
+        <img v-bind:src="logo.svg"
+        v-bind:alt="'VueJs is awesome'"
+        v-bind:data-img-large="logo" v-bind:alt="'VueJs.is awesome!'">
+
+        <p :class="classe">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat corporis alias ex, commodi ducimus atque ullam porro harum molestias dolorem earum temporibus quia neque architecto nemo recusandae ratione, voluptas sapiente.
+        </p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.14/dist/vue.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
