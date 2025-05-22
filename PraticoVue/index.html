@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crud com Vue.JS</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.14/dist/vue.js"></script>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="site.css">
+</head>
+<body>
+    <div id="app">
+        <h1>Cadastro de Agenda</h1>
+        <form @submit.prevent="editIndex === -1 ? addContact() : updateContact()">
+            <input type="text" v-model="currentContact.name" placeholder="Nome" required>
+            <input type="text" v-model="currentContact.phone" placeholder="Telefone" required>
+            <input type="text" v-model="currentContact.email" placeholder="Email" required>
+            <button type="submit">{{ editIndex === -1 ? 'Adicionar' : 'Atualizar' }}</button>
+        </form>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Telefone</th>
+                    <th>Email</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr v-for="(contact, index) in contacts" :key="index">
+                    <td>{{ contact.name }}</td>
+                    <td>{{ contact.phone }}</td>
+                    <td>{{ contact.email }}</td>
+                    <td>
+                        <button class="edit" @click="editContact(index)">Editar</button>
+                        <button class="delete" @click="deleteContact(index)">Deletar</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
