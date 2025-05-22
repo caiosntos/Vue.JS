@@ -9,6 +9,11 @@ var app = new Vue({
         contacts: [],
         editIndex: -1
     },
+    computed:{
+        contactsCount(){
+            return this.contacts.length;
+        }
+    },
     methods: {
         addContact() {
             if (this.currentContact.name && this.currentContact.phone && this.currentContact.email) {
