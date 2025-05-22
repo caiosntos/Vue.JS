@@ -7,6 +7,7 @@
     <script src="https://cdn.jsdelivr.net/npm/vue@2.7.14/dist/vue.js"></script>
     <script src="script.js" defer></script>
     <link rel="stylesheet" href="site.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
     <div id="app">
@@ -17,7 +18,7 @@
             <input type="text" v-model="currentContact.email" placeholder="Email" required>
             <button type="submit">{{ editIndex === -1 ? 'Adicionar' : 'Atualizar' }}</button>
         </form>
-
+        <div class="message"></div>
         <table>
             <thead>
                 <tr>
